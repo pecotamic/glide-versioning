@@ -1,0 +1,38 @@
+{
+  "name": "pecotamic/glide-versioning",
+  "description": "Cache busting for statically cached Glide images in Statamic",
+  "type": "statamic-addon",
+  "license": "MIT",
+  "keywords": [
+    "statamic",
+    "glide",
+    "cache",
+    "cache busting"
+  ],
+  "require": {
+    "php": "^8.2",
+    "statamic/cms": "^5.0|^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pecotamic\\GlideVersioning\\": "src"
+    }
+  },
+  "extra": {
+    "statamic": {
+      "name": "Pecotamic Glide Versioning",
+      "description": "New image URL whenever an asset changes, so Glide images can be cached forever"
+    },
+    "laravel": {
+      "providers": [
+        "Pecotamic\\GlideVersioning\\ServiceProvider"
+      ]
+    }
+  },
+  "authors": [
+    {
+      "name": "Werner Freytag",
+      "email": "wf@pecora.de"
+    }
+  ]
+}
