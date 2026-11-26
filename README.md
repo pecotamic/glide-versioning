@@ -1,11 +1,14 @@
-# Cache busting for statically cached Glide images
+# Glide Versioning Addon for Statamic
 
-![Statamic 5.0+](https://img.shields.io/badge/Statamic-5.0+-FF269E?style=for-the-badge&link=https://statamic.com)
-![Statamic 6.0+](https://img.shields.io/badge/Statamic-6.0+-FF269E?style=for-the-badge&link=https://statamic.com)
+![Statamic 5](https://img.shields.io/badge/Statamic-5.0+-26BBDD?style=for-the-badge&link=https://statamic.com)
+![Statamic 6](https://img.shields.io/badge/Statamic-6.0+-FF269E?style=for-the-badge&link=https://statamic.com)
 
-Pecotamic Glide Versioning is a Statamic addon which gives Glide images a new URL whenever the
-underlying asset changes. Images can then be cached forever (`immutable`) by browsers and CDNs,
-and replaced images still show up immediately.
+[![Tests](https://github.com/pecotamic/glide-versioning/actions/workflows/tests.yml/badge.svg)](https://github.com/pecotamic/glide-versioning/actions/workflows/tests.yml)
+
+Cache busting for statically cached Glide images. Pecotamic Glide Versioning is a Statamic
+addon which gives Glide images a new URL whenever the underlying asset changes. Images can then
+be cached forever (`immutable`) by browsers and CDNs, and replaced images still show up
+immediately.
 
 ## The problem
 
