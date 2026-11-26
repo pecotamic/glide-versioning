@@ -75,7 +75,7 @@ the requests are handled by PHP and its headers apply.
 You can override the default options by publishing the configuration:
 
 ```sh
-php artisan vendor:publish --provider="Pecotamic\GlideVersioning\ServiceProvider" --tag=config
+php artisan vendor:publish --tag=pecotamic-glide-versioning-config
 ```
 
 This will copy the default config file to `config/pecotamic/glide-versioning.php`.
