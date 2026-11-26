@@ -7,11 +7,6 @@ use Statamic\Facades\StaticCache;
 
 class FlushStaticCacheTest extends TestCase
 {
-    protected function disableVersioning($app): void
-    {
-        $app['config']->set('pecotamic.glide-versioning.enabled', false);
-    }
-
     protected function disableFlushing($app): void
     {
         $app['config']->set('pecotamic.glide-versioning.flush_static_cache', false);
@@ -46,17 +41,6 @@ class FlushStaticCacheTest extends TestCase
 
     #[DefineEnvironment('disableFlushing')]
     public function test_the_static_cache_is_kept_when_flushing_is_disabled()
-    {
-        $asset = $this->makeAsset('photo.jpg');
-
-        StaticCache::shouldReceive('flush')->never();
-
-        $this->reupload($asset);
-        $asset->delete();
-    }
-
-    #[DefineEnvironment('disableVersioning')]
-    public function test_the_static_cache_is_kept_when_versioning_is_disabled()
     {
         $asset = $this->makeAsset('photo.jpg');
 

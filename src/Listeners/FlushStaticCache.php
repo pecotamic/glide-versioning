@@ -12,8 +12,7 @@ class FlushStaticCache
      */
     public function handle(): void
     {
-        if (! config('pecotamic.glide-versioning.enabled', true)
-            || ! config('pecotamic.glide-versioning.flush_static_cache', true)) {
+        if (! config('pecotamic.glide-versioning.flush_static_cache', true)) {
             return;
         }
 

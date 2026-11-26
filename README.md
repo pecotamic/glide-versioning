@@ -83,9 +83,11 @@ php artisan vendor:publish --tag=pecotamic-glide-versioning-config
 
 This will copy the default config file to `config/pecotamic/glide-versioning.php`.
 
+If you invalidate the static cache in another way, e.g. per page or by purging a CDN, you can
+turn off flushing it on asset changes:
+
 ```env
-PECOTAMIC_GLIDE_VERSIONING_ENABLED=true
-PECOTAMIC_GLIDE_VERSIONING_FLUSH_STATIC_CACHE=true
+PECOTAMIC_GLIDE_VERSIONING_FLUSH_STATIC_CACHE=false
 ```
 
 ## Notes
